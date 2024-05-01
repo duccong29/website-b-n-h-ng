@@ -1,0 +1,439 @@
+[
+    [
+    { 
+      "id":1,
+      "anhSrc": "image/danhmuc4.webp",
+      "chinhhang": "image/chinhhanh.png",
+      "ten": "Tã/bỉm quần HUGGIES SKINCARE gói SUPER JUMBO size XL 60+8 miếng",
+      "gia": 280000,
+      "giamgia": 0.35,
+      "nowIcon": "image/now.png",
+      "giaohang": "giao siêu tốc",
+      "stars": [1, 2, 3, 4, 5]
+    }, {
+      "id":2,
+      "anhSrc": "image/danhmuc3.webp",
+      "chinhhang": "image/chinhhanh.png",
+      "ten": "Bộ 2 Lon Sữa Bột Friso Gold 4 1400g Dành Cho trẻ Từ 2 - 6 Tuổi + Tặng Lon Sữa Friso Gold 4 380g",
+      "gia": 980000,
+      "giamgia": 0.35,
+      "nowIcon": "image/mattroi.png",
+      "giaohang": "giao chiều mai",
+      "stars": [1, 2, 3, 4, 5]
+    }, {
+      "id":3,
+      "anhSrc": "image/danhmuc1.webp",
+      "chinhhang": "image/chinhhanh.png",
+      "ten": "Sữa bột Nestlé NAN OPTIPRO PLUS 2 800g/lon với 5HMO Sản Xuất Tại Thụy Sĩ (6 - 12 tháng)",
+      "gia": 580000,
+      "giamgia": 0.35,
+      "nowIcon": "image/now.png",
+      "giaohang": "giao siêu tốc",
+      "stars": [1, 2, 3, 4, 5]
+    }, {
+      "id":4,
+      "anhSrc": "image/danhmuc.webp",
+      "chinhhang": "image/chinhhanh.png",
+      "ten": "Combo Tiết Kiệm: 6 Gói Khăn Ướt Bobby Care Bổ Sung 80 Miếng/Gói",
+      "gia": 480000,
+      "giamgia": 0.35,
+      "nowIcon": "image/mattroi.png",
+      "giaohang": "giao chiều mai",
+      "stars": [1, 2, 3, 4, 5]
+    }, {
+      "id":5,
+      "anhSrc": "image/danhmuc2.webp",
+      "chinhhang": "image/chinhhanh.png",
+      "ten": "Thùng 24 Chai Sữa Nước Abbott Ensure 237ml",
+      "gia": 1710000,
+      "giamgia": 0.35,
+      "nowIcon": "image/now.png",
+      "giaohang": "giao siêu tốc",
+      "stars": [1, 2, 3, 4, 5]
+    }, {
+      "id":6,
+      "anhSrc": "image/danhmuc7.webp",
+      "chinhhang": "image/chinhhanh.png",
+      "ten": "Thùng 24 Chai Sữa Nước Abbott Ensure 237ml",
+      "gia": 1710000,
+      "giamgia": 0.35,
+      "nowIcon": "image/now.png",
+      "giaohang": "giao siêu tốc",
+      "stars": [1, 2, 3, 4, 5]
+    }
+  ],
+  [
+    {
+      "id":7,
+      "anhSrc": "image/danhmuc9.webp",
+      "chinhhang": "image/chinhhanh.png",
+      "ten": "Sữa bột Nestlé NAN OPTIPRO PLUS 1 800g/lon với 5HMO Sản Xuất Tại Thụy Sĩ (0 - 6 tháng)",
+      "gia": 320000,
+      "giamgia": 0.05,
+      "nowIcon": "image/now.png",
+      "giaohang": "giao siêu tốc",
+      "stars": [1, 2, 3, 4, 5]
+    }, {
+        "id":8,
+        "anhSrc": "image/danhmuc6.webp",
+        "chinhhang": "image/chinhhanh.png",
+        "ten": "Lốc 04 Hộp Sữa Nước Abbott Grow Gold 180ml",
+        "gia": 760000,
+        "giamgia": 0.1,
+        "nowIcon": "image/mattroi.png",
+        "giaohang": "giao chiều mai",
+        "stars": [1, 2, 3, 4, 5]
+    }, {
+      "id":9,
+      "anhSrc": "image/danhmuc5.webp",
+      "chinhhang": "image/chinhhanh.png",
+      "ten": "Tã/bỉm quần HUGGIES SKINCARE gói SUPER JUMBO size XL 60+8 miếng",
+      "gia": 880000,
+      "giamgia": 0.35,
+      "nowIcon": "image/now.png",
+      "giaohang": "giao siêu tốc",
+      "stars": [1, 2, 3, 4, 5]
+    }, {
+      "id":10,
+      "anhSrc": "image/danhmuc2.webp",
+      "chinhhang": "image/chinhhanh.png",
+      "ten": "Thùng 48 Hộp Sữa Nước Abbott Grow Gold 180ml cho trẻ 1 tuổi trở lên",
+      "gia": 2230000,
+      "giamgia": 0.35,
+      "nowIcon": "image/mattroi.png",
+      "giaohang": "giao chiều mai",
+      "stars": [1, 2, 3, 4, 5]
+    }, {
+      "id":11,
+      "anhSrc": "image/danhmuc1.webp",
+      "chinhhang": "image/chinhhanh.png",
+      "ten": "Tã dán sơ sinh Huggies Tràm Trà Tự Nhiên NB70(dưới 5kg) - Gói 70 miếng + Tặng 6 miếng",
+      "gia": 1110000,
+      "giamgia": 0.5,
+      "nowIcon": "image/now.png",
+      "giaohang": "giao siêu tốc",
+      "stars": [1, 2, 3, 4, 5]
+    }, {
+      "id":12,
+      "anhSrc": "image/danhmuc3.webp",
+      "chinhhang": "image/chinhhanh.png",
+      "ten": "Tã dán sơ sinh Huggies Tràm Trà Tự Nhiên NB70(dưới 5kg) - Gói 70 miếng + Tặng 6 miếng",
+      "gia": 1110000,
+      "giamgia": 0.3,
+      "nowIcon": "image/now.png",
+      "giaohang": "giao siêu tốc",
+      "stars": [1, 2, 3, 4, 5]
+    }
+  ],[
+    {
+      "id":13,
+      "anhSrc": "image/danhmuc.webp",
+      "chinhhang": "image/chinhhanh.png",
+      "ten": "Tã/bỉm quần HUGGIES SKINCARE gói SUPER JUMBO size XL 60+8 miếng",
+      "gia": 280000,
+      "giamgia": 0.5,
+      "nowIcon": "image/now.png",
+      "giaohang": "giao siêu tốc",
+      "stars": [1, 2, 3, 4, 5]
+    }, {
+        "id":14,
+        "anhSrc": "image/danhmuc1.webp",
+        "chinhhang": "image/chinhhanh.png",
+        "ten": "Bộ 2 Lon Sữa Bột Friso Gold 4 1400g Dành Cho trẻ Từ 2 - 6 Tuổi + Tặng Lon Sữa Friso Gold 4 380g",
+        "gia": 980000,
+        "giamgia": 0.5,
+        "nowIcon": "image/mattroi.png",
+        "giaohang": "giao chiều mai",
+        "stars": [1, 2, 3, 4, 5]
+    }, {
+      "id":15,
+      "anhSrc": "image/danhmuc3.webp",
+      "chinhhang": "image/chinhhanh.png",
+      "ten": "Sữa bột Nestlé NAN OPTIPRO PLUS 2 800g/lon với 5HMO Sản Xuất Tại Thụy Sĩ (6 - 12 tháng)",
+      "gia": 580000,
+      "giamgia": 0.35,
+      "nowIcon": "image/now.png",
+      "giaohang": "giao siêu tốc",
+      "stars": [1, 2, 3, 4, 5]
+    }, {
+      "id":16,
+      "anhSrc": "image/danhmuc4.webp",
+      "chinhhang": "image/chinhhanh.png",
+      "ten": "Combo Tiết Kiệm: 6 Gói Khăn Ướt Bobby Care Bổ Sung 80 Miếng/Gói",
+      "gia": 480000,
+      "giamgia": 0.3,
+      "nowIcon": "image/mattroi.png",
+      "giaohang": "giao chiều mai",
+      "stars": [1, 2, 3, 4, 5]
+    }, {
+      "id":17,
+      "anhSrc": "image/danhmuc5.webp",
+      "chinhhang": "image/chinhhanh.png",
+      "ten": "Thùng 24 Chai Sữa Nước Abbott Ensure 237ml",
+      "gia": 1710000,
+      "giamgia": 0.5,
+      "nowIcon": "image/now.png",
+      "giaohang": "giao siêu tốc",
+      "stars": [1, 2, 3, 4, 5]
+    }, {
+      "id":18,
+      "anhSrc": "image/danhmuc5.webp",
+      "chinhhang": "image/chinhhanh.png",
+      "ten": "Thùng 24 Chai Sữa Nước Abbott Ensure 237ml",
+      "gia": 1710000,
+      "giamgia": 0.35,
+      "nowIcon": "image/now.png",
+      "giaohang": "giao siêu tốc",
+      "stars": [1, 2, 3, 4, 5]
+    }
+  ],[
+    { "id":19,
+      "anhSrc": "image/danhmuc6.webp",
+      "chinhhang": "image/chinhhanh.png",
+      "ten": "Sữa bột Nestlé NAN OPTIPRO PLUS 1 800g/lon với 5HMO Sản Xuất Tại Thụy Sĩ (0 - 6 tháng)",
+      "gia": 320000,
+      "giamgia": 0.5,
+      "nowIcon": "image/now.png",
+      "giaohang": "giao siêu tốc",
+      "stars": [1, 2, 3, 4, 5]
+    }, {
+      "id":20,
+        "anhSrc": "image/danhmuc7.webp",
+        "chinhhang": "image/chinhhanh.png",
+        "ten": "Lốc 04 Hộp Sữa Nước Abbott Grow Gold 180ml",
+        "gia": 760000,
+        "giamgia": 0.1,
+        "nowIcon": "image/mattroi.png",
+        "giaohang": "giao chiều mai",
+        "stars": [1, 2, 3, 4, 5]
+    }, {
+      "id":21,
+      "anhSrc": "image/danhmuc8.webp",
+      "chinhhang": "image/chinhhanh.png",
+      "ten": "Tã/bỉm quần HUGGIES SKINCARE gói SUPER JUMBO size XL 60+8 miếng",
+      "gia": 880000,
+      "giamgia": 0.35,
+      "nowIcon": "image/now.png",
+      "giaohang": "giao siêu tốc",
+      "stars": [1, 2, 3, 4, 5]
+    }, {
+      "id":22,
+      "anhSrc": "image/danhmuc9.webp",
+      "chinhhang": "image/chinhhanh.png",
+      "ten": "Thùng 48 Hộp Sữa Nước Abbott Grow Gold 180ml cho trẻ 1 tuổi trở lên",
+      "gia": 2230000,
+      "giamgia": 0.3,
+      "nowIcon": "image/mattroi.png",
+      "giaohang": "giao chiều mai",
+      "stars": [1, 2, 3, 4, 5]
+    }, {
+      "id":23,
+      "anhSrc": "image/danhmuc.webp",
+      "chinhhang": "image/chinhhanh.png",
+      "ten": "Tã dán sơ sinh Huggies Tràm Trà Tự Nhiên NB70(dưới 5kg) - Gói 70 miếng + Tặng 6 miếng",
+      "gia": 1110000,
+      "giamgia": 0.5,
+      "nowIcon": "image/now.png",
+      "giaohang": "giao siêu tốc",
+      "stars": [1, 2, 3, 4, 5]
+    }, {
+      "id":24,
+      "anhSrc": "image/danhmuc.webp",
+      "chinhhang": "image/chinhhanh.png",
+      "ten": "Tã dán sơ sinh Huggies Tràm Trà Tự Nhiên NB70(dưới 5kg) - Gói 70 miếng + Tặng 6 miếng",
+      "gia": 1110000,
+      "giamgia": 0.25,
+      "nowIcon": "image/now.png",
+      "giaohang": "giao siêu tốc",
+      "stars": [1, 2, 3, 4, 5]
+    }
+  ],[ 
+    { "id":25,
+      "anhSrc": "image/banhtrungthu1.webp",
+      "chinhhang": "image/chinhhanh.png",
+      "ten": "[BÁNH TRUNG THU 2023] Hộp 4 Bánh Trung Thu Real Food",
+      "gia": 110000,
+      "giamgia": 0.05,
+      "nowIcon": "image/now.png",
+      "giaohang": "giao siêu tốc",
+      "stars": [1, 2, 3, 4, 5]
+    }, {
+      "id":26,
+        "anhSrc": "image/banhtrungthu2.webp",
+        "chinhhang": "image/chinhhanh.png",
+        "ten": "Bánh Trung Thu Real Food 2023 thơm ngon - KHÔNG chất bảo quản, chất phụ gia và phẩm màu",
+        "gia": 1550000,
+        "giamgia": 0.15,
+        "nowIcon": "image/mattroi.png",
+        "giaohang": "giao chiều mai",
+        "stars": [1, 2, 3, 4, 5]
+    }, {
+      "id":27,
+      "anhSrc": "image/banhtrungthu3.webp",
+      "chinhhang": "image/chinhhanh.png",
+      "ten": "Bánh Trung Thu Gà Quay Jambon 1 Trứng 150G",
+      "gia": 885000,
+      "giamgia": 0.25,
+      "nowIcon": "image/now.png",
+      "giaohang": "giao siêu tốc",
+      "stars": [1, 2, 3, 4, 5]
+    }, {
+      "id":28,
+      "anhSrc": "image/banhtrungthu4.webp",
+      "chinhhang": "image/chinhhanh.png",
+      "ten": "Hộp 9 Bánh Duyên Vị Ngàn Lớp Hoa - Bánh Trung Thu 2022",
+      "gia": 2230000,
+      "giamgia": 0.05,
+      "nowIcon": "image/mattroi.png",
+      "giaohang": "giao chiều mai",
+      "stars": [1, 2, 3, 4, 5]
+    }, {
+      "id":29,
+      "anhSrc": "image/banhtrungthu5.webp",
+      "chinhhang": "image/chinhhanh.png",
+      "ten": "Bánh Trung Thu Dẻo Đậu Xanh 1 Trứng 180G",
+      "gia": 110000,
+      "giamgia": 0.15,
+      "nowIcon": "image/now.png",
+      "giaohang": "giao siêu tốc",
+      "stars": [1, 2, 3, 4, 5]
+    }, {
+      "id":30,
+      "anhSrc": "image/banhtrungthu.webp",
+      "chinhhang": "image/chinhhanh.png",
+      "ten": "[Dòng bánh nướng ] Bánh Trung Thu Kinh Đô M1-Khoai Môn 1 Trứng 150g ( Bánh lẻ)- Mã bánhM1",
+      "gia": 280000,
+      "giamgia": 0.25,
+      "nowIcon": "image/now.png",
+      "giaohang": "giao siêu tốc",
+      "stars": [1, 2, 3, 4, 5]
+    }
+  ],
+  
+  [ 
+    { "id":31,
+      "anhSrc": "image/tainghe.webp",
+      "chinhhang": "image/chinhhanh.png",
+      "ten": "Tai Nghe Nhét Tai Sony Fontopia MDR-E9LP",
+      "gia": 319000,
+      "giamgia": 0.2,
+      "nowIcon": "image/now.png",
+      "giaohang": "giao siêu tốc",
+      "stars": [1, 2, 3, 4, 5]
+    }, {
+      "id":32,
+        "anhSrc": "image/tainghe1.webp",
+        "chinhhang": "image/chinhhanh.png",
+        "ten": "Tai Nghe Nhét Tai Sony MDR-EX155AP",
+        "gia": 356000,
+        "giamgia": 0.1,
+        "nowIcon": "image/mattroi.png",
+        "giaohang": "giao chiều mai",
+        "stars": [1, 2, 3, 4, 5]
+    }, {
+      "id":33,
+      "anhSrc": "image/tainghe2.webp",
+      "chinhhang": "image/chinhhanh.png",
+      "ten": "Tai Nghe Apple EarPods Cổng Lightning - MMTN2",
+      "gia": 895000,
+      "giamgia": 0.2,
+      "nowIcon": "image/now.png",
+      "giaohang": "giao siêu tốc",
+      "stars": [1, 2, 3, 4, 5]
+    }, {
+      "id":34,
+      "anhSrc": "image/tainghe3.webp",
+      "chinhhang": "image/chinhhanh.png",
+      "ten": "Tai Nghe Nhét Tai Sony ExtraBass MDR-XB55AP",
+      "gia": 232000,
+      "giamgia": 0.3,
+      "nowIcon": "image/mattroi.png",
+      "giaohang": "giao chiều mai",
+      "stars": [1, 2, 3, 4, 5]
+    }, {
+      "id":35,
+      "anhSrc": "image/tainghe4.webp",
+      "chinhhang": "image/chinhhanh.png",
+      "ten": "Tai Nghe Apple EarPods Cổng Lightning - MMTN2",
+      "gia": 160000,
+      "giamgia": 0.5,
+      "nowIcon": "image/now.png",
+      "giaohang": "giao siêu tốc",
+      "stars": [1, 2, 3, 4, 5]
+    }, {
+      "id":36,
+      "anhSrc": "image/tainghe.webp",
+      "chinhhang": "image/chinhhanh.png",
+      "ten": "Tai Nghe Nhét Tai Sony ExtraBass MDR-XB55A",
+      "gia": 288000,
+      "giamgia": 0.5,
+      "nowIcon": "image/now.png",
+      "giaohang": "giao siêu tốc",
+      "stars": [1, 2, 3, 4, 5]
+    }
+  ],
+  [ 
+    { "id":37,
+      "anhSrc": "image/dt1.webp",
+      "chinhhang": "image/chinhhanh.png",
+      "ten": "Tai Nghe Nhét Tai Sony Fontopia MDR-E9LP",
+      "gia": 319000,
+      "giamgia": 0.2,
+      "nowIcon": "image/now.png",
+      "giaohang": "giao siêu tốc",
+      "stars": [1, 2, 3, 4, 5]
+    }, {
+      "id":38,
+        "anhSrc": "image/dt4.webp",
+        "chinhhang": "image/chinhhanh.png",
+        "ten": "Tai Nghe Nhét Tai Sony MDR-EX155AP",
+        "gia": 356000,
+        "giamgia": 0.1,
+        "nowIcon": "image/mattroi.png",
+        "giaohang": "giao chiều mai",
+        "stars": [1, 2, 3, 4, 5]
+    }, {
+      "id":39,
+      "anhSrc": "image/dt3.webp",
+      "chinhhang": "image/chinhhanh.png",
+      "ten": "Tai Nghe Apple EarPods Cổng Lightning - MMTN2",
+      "gia": 895000,
+      "giamgia": 0.2,
+      "nowIcon": "image/now.png",
+      "giaohang": "giao siêu tốc",
+      "stars": [1, 2, 3, 4, 5]
+    }, {
+      "id":40,
+      "anhSrc": "image/dt5.webp",
+      "chinhhang": "image/chinhhanh.png",
+      "ten": "Tai Nghe Nhét Tai Sony ExtraBass MDR-XB55AP",
+      "gia": 232000,
+      "giamgia": 0.3,
+      "nowIcon": "image/mattroi.png",
+      "giaohang": "giao chiều mai",
+      "stars": [1, 2, 3, 4, 5]
+    }, {
+      "id":41,
+      "anhSrc": "image/dt6.webp",
+      "chinhhang": "image/chinhhanh.png",
+      "ten": "Tai Nghe Apple EarPods Cổng Lightning - MMTN2",
+      "gia": 160000,
+      "giamgia": 0.5,
+      "nowIcon": "image/now.png",
+      "giaohang": "giao siêu tốc",
+      "stars": [1, 2, 3, 4, 5]
+    }, {
+      "id":42,
+      "anhSrc": "image/dt1.webp",
+      "chinhhang": "image/chinhhanh.png",
+      "ten": "Tai Nghe Nhét Tai Sony ExtraBass MDR-XB55A",
+      "gia": 288000,
+      "giamgia": 0.5,
+      "nowIcon": "image/now.png",
+      "giaohang": "giao siêu tốc",
+      "stars": [1, 2, 3, 4, 5]
+    }
+  ]
+]
+
+

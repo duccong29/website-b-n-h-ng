@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>DemoBuoi6</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body ng-app="myapp">
+  <div class="container">
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="image/carouse1.webp" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="image/carousel2.webp" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="image/carousel3.webp" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-header">
+            Mức giá
+          </div>
+          <div class="card-body">
+            <div class="list-group">
+              <label class="list-group-item" ng-click="filterProducts('under_1M')">
+                <input class="form-check-input me-1" type="checkbox" value="">
+                Dưới 1.000.000
+              </label>
+              <label class="list-group-item"  ng-click="filterProducts('1M_2M')">
+                <input class="form-check-input me-1" type="checkbox" value="">
+                1.000.000 - 2.000.000
+              </label>
+              <label class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox" value="">
+                2.000.000 - 3.000.000
+              </label>
+              <label class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox" value="">
+                3.000.000 - 4.000.000
+              </label>
+              <label class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox" value="">
+                4.000.000 - 5.000.000
+              </label>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-8"ng-controller="myCtrl" >
+        <div class="row mx-2 mb-2">
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3" ng-repeat="sp in filteredProducts">
+            <div class="card border" style="margin-bottom: 10px;">
+              <img src="{{ sp.anhSrc }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <a style="text-decoration: none; color: black;" href="#"> 
+                    <p style="margin-bottom: 0" class="mt card-text">{{ sp.ten }}</p></a> 
+                    <h6 style="font-size: 15px;">{{ sp.gia | number:0 }}<sup>đ</sup>
+                    <h6 class="badge rounded-pill text-bg-secondary">-{{ sp.giamgia*100 }}%</h6>
+                </div>
+            </div>  
+          </div>
+        </div>
+        <!-- <div class="row mx-2">
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3" ng-repeat="sp in listSP">
+            <div class="card border" style="margin-bottom: 10px;">
+              <img src="{{ sp.anhSrc }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <a style="text-decoration: none; color: black;" href="#"> 
+                    <p style="margin-bottom: 0" class="mt card-text">{{ sp.ten }}</p></a> 
+                    <h6 style="font-size: 15px;">{{ sp.gia | number:0 }}<sup>đ</sup>
+                    <h6 class="badge rounded-pill text-bg-secondary">-{{ sp.giamgia*100 }}%</h6>
+                </div>
+            </div>  
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </div>
+    
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+    <script src="angular.min.js"></script>
+  <script src="js.js"></script>
+</body>
+
+</html>
+<script>
+  var app = angular.module('myapp', []);
+  app.controller('myCtrl', function ($scope) {
+    $scope.listSP = [
+      {
+        id:1,
+        anhSrc: "image/dt.webp",
+        ten: "samsung",
+        gia: 2800000,
+        giamgia:0.50,
+        
+      },{
+        id:2,
+        anhSrc: "image/dt1.webp",
+        ten: "samsung1",
+        gia: 2900000,
+        giamgia:0.50,
+        
+      },{
+        id:3,
+        anhSrc: "image/dt3.webp",
+        ten: "samsung2",
+        gia: 1800000,
+        giamgia:0.50,
+       
+      },{
+        id:4,
+        anhSrc: "image/dt4.webp",
+        ten: "samsung3",
+        gia: 80000,
+        giamgia:0.50,
+       
+      },
+    ];
+    
+    
+    $scope.filteredProducts = $scope.listSP;
+
+  $scope.filterProducts = function (priceRange) {
+    switch (priceRange) {
+      case 'under_1M':
+        $scope.filteredProducts = $scope.listSP.filter(function (product) {
+          return product.gia < 1000000;
+        });
+        break;
+      case '1M_2M':
+        $scope.filteredProducts = $scope.listSP.filter(function (product) {
+          return product.gia >= 1000000 && product.gia <= 2000000;
+        });
+        break;
+      // Thêm các trường hợp lọc cho các mức giá khác tương tự như trên
+      default:
+        // Nếu không có mức giá nào được chọn, hiển thị tất cả sản phẩm
+        $scope.filteredProducts = $scope.listSP;
+        break;
+        fa
+    }
+  };
+
+  })
+</script>

@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Assignment</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <main>
+    <div class="container-fluid">
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#!Trangchu">Trang chủ</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Đăng nhập</li>
+        </ol>
+    </nav>
+    
+    <div class="row">
+        <div class="col-sm-5 mx-auto"> 
+            <div class="card my-3">
+                <div class="card-header">
+                    <h4 class="text-center">Đăng nhập</h4>
+                </div>
+                <div class="card-body">
+                    <form name="sinhvien">
+                        <div class="form-group">
+                            <label for="" class="form-label">Email</label>
+                            <input type="email" ng-model="email" required class="form-control" name="email" id="email" aria-describedby="emailhelpId"
+                                placeholder="">
+                            <small ng-show="sinhvien.email.$invalid" id="emailhelpId" class="form-text text-muted">Email không hợp lệ</small>
+                        </div>
+                  
+                        <div class="form-group">
+                          <label class="my-1" for="password">Mật khẩu</label>
+                          <input type="password" name="password" ng-model="password" ng-minlength="6" required class="form-control" id="password" placeholder="Mật khẩu">
+                          <small ng-show="sinhvien.password.$invalid" id="passwordHelpId" class="form-text text-muted">Mật khẩu phải có ít nhất 6 ký tự</small>
+                      </div>
+                        <button type="submit" class="btn btn-primary btn-block mt-3">Đăng Nhập</button>
+                        
+                    </form>
+                </div>
+                <div class="card-footer">
+                    <p>Chưa có tài khoản? <a href="#!Dangky">Đăng ký</a></p>
+                </div>
+            </div>
+            
+        </div>
+        <img src="image/dangky.png" alt="" style="width: 450px;">
+    </div>
+     
+    </div>
+  </main>
+  <footer class="container-fluid">
+      <div class="row border">
+        <div class="col-sm-2 col-6">
+            <h4 style="font-size: 20px; margin-top: 15px; margin-left: 25px;">Hỗ trợ khách hàng</h4>
+            <ul style="list-style-type: none;">
+                <li><a class="thea" href="#">Hotline: 1900-6035(1000 đ/phút, 8-21h kể cả t7,cn)</a></li>
+                <li><a class="thea" href="#">Các câu hỏi thường gặp</a></li>
+                <li><a class="thea" href="#">Gửi yêu cầu hỗ trợ</a></li>
+                <li><a class="thea" href="#">Hướng dẫn đặt hàng</a></li>
+                <li><a class="thea" href="#">Phương thức thanh toán</a></li>
+                <li><a class="thea" href="#">Chính sách đổi trả</a></li>
+                <li><a class="thea" href="#">Hướng dẫn trả góp</a></li>
+                <li><a class="thea" href="#">Chính sách hàng nhập khẩu</a></li>
+                <li><a class="thea" href="#">Hỗ trợ khách hàng: hotro@tiki.vn</a></li>
+                <li><a class="thea" href="#">Báo cáo bảo mật: security@tiki.vn</a></li>
+            </ul>
+        </div>
+        <div class="col-md-2 col-6">
+            <h4 style="font-size: 20px; margin-top: 15px; margin-left: 25px;">Về tiki</h4>
+            <ul style="list-style-type: none;">
+                <li><a class="thea" href="#">Giới thiệu về tiki</a></li>
+                <li><a class="thea" href="#">tiki blog</a></li>
+                <li><a class="thea" href="#">Tuyển dụng</a></li>
+                <li><a class="thea" href="#">Chính sách bảo mật thanh toán</a></li>
+                <li><a class="thea" href="#">Chính sách bảo mật thông tin cá nhân</a></li>
+                <li><a class="thea" href="#">Chính sách giải quyết khiếu nại</a></li>
+                <li><a class="thea" href="#">Điều khoản sử dụng</a></li>
+                <li><a class="thea" href="#">Giới thiệu tiki xu</a></li>
+                <li><a class="thea" href="#">Thưởng thêm Astra</a></li>
+                <li><a class="thea" href="#">Gói hội viên vip</a></li>
+                <li><a class="thea" href="#">Tiếp thị liên kết cùng tiki</a></li>
+                
+            </ul>
+        </div>
+        <div class="col-md-2 col-6">
+            <h4 style="font-size: 20px; margin-top: 15px; margin-left: 25px;">Hợp tác và liên kết</h4>
+            <ul style="list-style-type: none;">
+                <li><a class="thea" href="#">Quy chế hoạt động sàn TMDT</a></li>
+                <li><a class="thea" href="#">Bán hàng cùng tiki</a></li>
+            </ul>
+            <h4 style="font-size: 20px; margin-top: 15px; margin-left: 25px;">Chứng nhận bởi</h4>
+            <img src="image/chungnhan.png" alt="" style="width: 32px; height: 32px; margin-left: 25px;">
+            <img src="image/chungnhan1.png" alt="" style="width: 92px; height: 32px; margin-left: 15px;">
+          </div>
+        <div class="col-md-2 col-6">
+            <h4 style="font-size: 20px; margin-top: 15px; margin-left: 25px;">Phương thức thanh toán</h4>
+            <img src="image/tttt.png" alt="" style="width: 122px; height: 132px; margin-left: 24px;">
+            <h4 style="font-size: 20px; margin-top: 15px; margin-left: 25px;">Dịch vụ giao hàng</h4>
+
+        </div>
+        <div class="col-md-4 col-12">
+            <h4 style="font-size: 20px; margin-top: 15px; ">Kết nối với chúng tôi</h4>
+            
+            <img src="image/ketnoi.png" alt="" style="width: 252px; height: 232px;">
+            
+        </div>
+    </div>
+
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
+<style>
+  html{
+    font-family: Inter,Helvetica,Arial,sans-serif;
+    
+  }
+  .spbc{
+    padding: 0px 16px;
+    height: 32px;
+    cursor: pointer;
+    align-items: center;
+    border: 1px solid rgb(221, 221, 227);
+    font-size: 14px;
+    display: flex;
+    margin-right: 10px;
+    font-weight: 400;
+  }
+ .ta {
+  display: flex;
+  justify-content: space-between;
+}
+  .mt{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  .gcm{
+    padding-top: 6px;
+    gap: 6px;
+    margin-bottom: -10px;
+    display: flex; 
+    font-size: 12px; 
+    color: rgb(128, 128, 137); 
+    border-top: 1px solid rgb(235, 235, 240);
+  }
+  main{
+    background-color: rgb(242, 243, 243);
+  }
+  .a{
+    width: 72px;
+    aspect-ratio: auto 72 / 72;
+    height: 72px;
+    margin: 0 20px 16px 15px;
+  }
+  .ab{
+    width: 690px;
+    margin-right: auto;
+  }
+  .aa{
+    width: 24px;
+    height: 24px;
+  }
+  
+  h6{
+    margin:0 3px 0 3px;
+    
+  }
+  .thea{
+    color: rgb(128, 128, 137);
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .dinhduong{
+    margin-left: -30px; 
+    color: rgb(128, 128, 137);
+    text-decoration: none; 
+    font-size: 14px; 
+    display: flex; 
+    line-height: 26px;
+  }
+  input.ng-invalid{
+        background-image: url('/image/x.png');
+        background-position: center right;
+        background-repeat: no-repeat;
+        border: 1px dotted red;
+        background-size:30px;
+    }
+</style>

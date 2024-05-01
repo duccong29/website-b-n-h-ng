@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Assignment</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body ng-app="myapp" ng-controller="MyController">
+
+  <main>
+    <div class="container-fluid">
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#!Trangchu">Trang chủ</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Chi tiết sản phẩm</li>
+        </ol>
+    </nav>
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <img src="{{ sanpham.anhSrc }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <div id="carouselExample" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="image/chitietsanpham1.webp" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="image/chitietsanpham2.webp" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="image/chitietsanpham3.webp" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="small-image-carousel">
+                        <div class="row mt-2 ">
+                        <img src="image/chitietsanpham1.webp" class="small-image" alt="..." style="width: 70px;  border: 1px solid #ccc;">
+                        <img src="image/chitietsanpham2.webp" class="small-image" alt="..." style="width: 70px; ">
+                        <img src="image/chitietsanpham3.webp" class="small-image" alt="..." style="width: 70px;">
+                        <img src="image/chitietsanpham3.webp" class="small-image" alt="..." style="width: 70px;">
+                        <img src="image/chitietsanpham3.webp" class="small-image" alt="..." style="width: 70px;">
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" > 
+                <div class="card-header">
+                    <img src="image/chinhhanh.png" class="card-img-top" alt="Chính hãng" style="width: 89px; height: 20px;">
+                    <span class="brand">Thương hiệu: Friso</span>
+                </div>  
+                <div class="card-body">
+                  <h5 class="card-title">{{sanpham.ten}}</h5>
+                    
+                     <div class="rating" style=" color: gold; font-size: 12px;">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <!-- <i class="fas fa-star-half-alt"></i> -->
+                      </div>
+                      <h5 class="card-title">{{sanpham.gia|number:0}} <span><sup>đ</sup></span> </h5>
+                  
+                </div>
+              </div>
+              <div class="card mt-2" > 
+                <div class="card-body">
+                    <h5 >Thông tin vận chuyển</h5> 
+                <span>Giao đến Q. 1, P. Bến Nghé, Hồ Chí Minh</span> <hr>
+                <span>
+                    <img src="image/now.png" alt=""style="width:32px ; height:16px;">
+                    Giao hàng siêu tốc
+                </span>
+                <p>Trước 13h hôm nay: Miễn phí 25.000<span><sup>đ</sup></span></p>
+                <span>
+                    <img src="image/mattroi.png" alt=""style="width:32px ; height:16px;">
+                    Giao đúng sáng mai
+                </span>
+                <p>8h - 12h, 29/09: Miễn phí 14.000<span><sup>đ</sup></span></p>
+                </div>
+              </div>
+
+              <div class="card mt-2" > 
+                <div class="card">
+                  <div class="card-body">
+                      <h5 class="">Dịch vụ bổ sung</h5>
+                      
+                      <div style="display: flex;  align-items: center;">
+                        <img src="image/dichvu.png" alt="" style="width: 39px; height: 39px; border-radius: 10px; margin-right: 5px;">
+                          <span> Mua trước trả sau</span>
+                          <span style="margin-left: auto;"><a href="" style=" text-decoration: none;">Đăng ký</a></span>
+                      </div>
+                  </div>
+                </div>            
+              </div>
+
+              <div class="card mt-2" > 
+                <div class="card-body">
+                    <h5>Sản phẩm tương tự</h5>
+                    <div class="row">
+                        <div class="col-md-3 px-1">
+                            <div class="card">
+                                <img src="image/banhtrungthu1.webp" class="card-img-top" alt="...">
+                                  <p style="margin-bottom: 0" class="mt card-text">Tã/bỉm quần HUGGIES SKINCARE gói
+                                    SUPER JUMBO size XL 60+8 miếng</p>
+                                    <h6 class="card-title" style="font-size: 14px;">1.900.000 <span><sup>đ</sup></span></h6>
+                            </div>
+                        </div>
+                        <div class="col-md-3 px-1">
+                          <div class="card">
+                              <img src="image/banhtrungthu1.webp" class="card-img-top" alt="...">
+                                <p style="margin-bottom: 0" class="mt card-text">Tã/bỉm quần HUGGIES SKINCARE gói
+                                  SUPER JUMBO size XL 60+8 miếng</p>
+                                  <h6 class="card-title" style="font-size: 14px;">1.900.000 <span><sup>đ</sup></span></h6>
+                          </div>
+                      </div>
+                      <div class="col-md-3 px-1">
+                        <div class="card">
+                            <img src="image/banhtrungthu1.webp" class="card-img-top" alt="...">
+                              <p style="margin-bottom: 0" class="mt card-text">Tã/bỉm quần HUGGIES SKINCARE gói
+                                SUPER JUMBO size XL 60+8 miếng</p>
+                                <h6 class="card-title" style="font-size: 14px;">1.900.000 <span><sup>đ</sup></span></h6>
+                        </div>
+                    </div>
+                    <div class="col-md-3 px-1">
+                      <div class="card">
+                          <img src="image/banhtrungthu1.webp" class="card-img-top" alt="...">
+                            <p style="margin-bottom: 0" class="mt card-text">Tã/bỉm quần HUGGIES SKINCARE gói
+                              SUPER JUMBO size XL 60+8 miếng</p>
+                              <h6 class="card-title" style="font-size: 14px;">1.900.000 <span><sup>đ</sup></span></h6>
+                      </div>
+                  </div>
+                    </div>
+
+                    <div class="row mt-2">
+                      <div class="col-md-3 px-1">
+                          <div class="card">
+                              <img src="image/banhtrungthu1.webp" class="card-img-top" alt="...">
+                                <p style="margin-bottom: 0" class="mt card-text">Tã/bỉm quần HUGGIES SKINCARE gói
+                                  SUPER JUMBO size XL 60+8 miếng</p>
+                                  <h6 class="card-title" style="font-size: 14px;">1.900.000 <span><sup>đ</sup></span></h6>
+                          </div>
+                      </div>
+                      <div class="col-md-3 px-1">
+                        <div class="card">
+                            <img src="image/banhtrungthu1.webp" class="card-img-top" alt="...">
+                              <p style="margin-bottom: 0" class="mt card-text">Tã/bỉm quần HUGGIES SKINCARE gói
+                                SUPER JUMBO size XL 60+8 miếng</p>
+                                <h6 class="card-title" style="font-size: 14px;">1.900.000 <span><sup>đ</sup></span></h6>
+                        </div>
+                    </div>
+                    <div class="col-md-3 px-1">
+                      <div class="card">
+                          <img src="image/banhtrungthu1.webp" class="card-img-top" alt="...">
+                            <p style="margin-bottom: 0" class="mt card-text">Tã/bỉm quần HUGGIES SKINCARE gói
+                              SUPER JUMBO size XL 60+8 miếng</p>
+                              <h6 class="card-title" style="font-size: 14px;">1.900.000 <span><sup>đ</sup></span></h6>
+                      </div>
+                  </div>
+                  <div class="col-md-3 px-1">
+                    <div class="card">
+                        <img src="image/banhtrungthu1.webp" class="card-img-top" alt="...">
+                          <p style="margin-bottom: 0" class="mt card-text">Tã/bỉm quần HUGGIES SKINCARE gói
+                            SUPER JUMBO size XL 60+8 miếng</p>
+                            <h6 class="card-title" style="font-size: 14px;">1.900.000 <span><sup>đ</sup></span></h6>
+                    </div>
+                </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mt-2" > 
+                  <div class="card-body">
+                      <h5 class="">Thông tin nhà bán</h5>
+                      <div style="display: flex;  align-items: center;">
+                        <img src="image/hangtiki.webp" alt="" style="width: 39px; height: 39px; border-radius: 50%; margin-right: 5px;">
+                          <span style="font-weight: 500;">Tiki Trading</span>
+                          <button style="margin-left: auto;" class="btn btn-primary btn-sm" type="button">Theo dõi</button>
+                      </div>
+                  </div>         
+              </div>
+
+              <div class="card my-2" > 
+                <div class="card-body">
+                    <h5 >An tâm mua sắm</h5>
+                    <p style="margin-bottom: -10px; margin-top: -5px;"> <i class="fa-solid fa-calendar-days"></i> Được mở hộp kiểm tra khi nhận hàng.</p> <hr>
+                    <p style="margin-bottom: -10px; margin-top: -10px;"><i class="fa-regular fa-clipboard"></i> Được hoàn tiền 111% nếu là hàng giả.</p> <hr>
+                    <p style="margin-bottom: -10px; margin-top: -10px;"><i class="fa-solid fa-pen-to-square"></i> Đổi trả miễn phí tại nhà trong 30 ngày nếu sản phẩm lỗi</p>
+                </div>         
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                  <h6 class="card-title">Số lượng</h6>
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item"><a class="page-link" href="#">-</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">+</a></li>
+                    </ul>
+                  </nav>
+                  <h6 class="card-title">Tạm tính</h6>
+                
+                  <h4 class="card-title"><span>{{sp.gia|number:0}}<sup>đ</sup></span> </h4>
+                  
+                  <a href="#!Giohang" class="btn btn-danger"  style="width: 100%;">Mua ngay</a>
+                  <a href="#" class="btn btn-primary mt-2" ng-click="mua(sp)" style="width: 100%; ">Thêm vào giỏ hàng</a>
+                  
+                </div>
+              </div>
+        </div>
+    </div>
+    
+     
+    </div>
+  </main>
+  <footer class="container-fluid">
+      <div class="row border">
+        <div class="col-sm-2 col-6">
+            <h4 style="font-size: 20px; margin-top: 15px; margin-left: 25px;">Hỗ trợ khách hàng</h4>
+            <ul style="list-style-type: none;">
+                <li><a class="thea" href="#">Hotline: 1900-6035(1000 đ/phút, 8-21h kể cả t7,cn)</a></li>
+                <li><a class="thea" href="#">Các câu hỏi thường gặp</a></li>
+                <li><a class="thea" href="#">Gửi yêu cầu hỗ trợ</a></li>
+                <li><a class="thea" href="#">Hướng dẫn đặt hàng</a></li>
+                <li><a class="thea" href="#">Phương thức thanh toán</a></li>
+                <li><a class="thea" href="#">Chính sách đổi trả</a></li>
+                <li><a class="thea" href="#">Hướng dẫn trả góp</a></li>
+                <li><a class="thea" href="#">Chính sách hàng nhập khẩu</a></li>
+                <li><a class="thea" href="#">Hỗ trợ khách hàng: hotro@tiki.vn</a></li>
+                <li><a class="thea" href="#">Báo cáo bảo mật: security@tiki.vn</a></li>
+            </ul>
+        </div>
+        <div class="col-md-2 col-6">
+            <h4 style="font-size: 20px; margin-top: 15px; margin-left: 25px;">Về tiki</h4>
+            <ul style="list-style-type: none;">
+                <li><a class="thea" href="#">Giới thiệu về tiki</a></li>
+                <li><a class="thea" href="#">tiki blog</a></li>
+                <li><a class="thea" href="#">Tuyển dụng</a></li>
+                <li><a class="thea" href="#">Chính sách bảo mật thanh toán</a></li>
+                <li><a class="thea" href="#">Chính sách bảo mật thông tin cá nhân</a></li>
+                <li><a class="thea" href="#">Chính sách giải quyết khiếu nại</a></li>
+                <li><a class="thea" href="#">Điều khoản sử dụng</a></li>
+                <li><a class="thea" href="#">Giới thiệu tiki xu</a></li>
+                <li><a class="thea" href="#">Thưởng thêm Astra</a></li>
+                <li><a class="thea" href="#">Gói hội viên vip</a></li>
+                <li><a class="thea" href="#">Tiếp thị liên kết cùng tiki</a></li>
+                
+            </ul>
+        </div>
+        <div class="col-md-2 col-6">
+            <h4 style="font-size: 20px; margin-top: 15px; margin-left: 25px;">Hợp tác và liên kết</h4>
+            <ul style="list-style-type: none;">
+                <li><a class="thea" href="#">Quy chế hoạt động sàn TMDT</a></li>
+                <li><a class="thea" href="#">Bán hàng cùng tiki</a></li>
+            </ul>
+            <h4 style="font-size: 20px; margin-top: 15px; margin-left: 25px;">Chứng nhận bởi</h4>
+            <img src="image/chungnhan.png" alt="" style="width: 32px; height: 32px; margin-left: 25px;">
+            <img src="image/chungnhan1.png" alt="" style="width: 92px; height: 32px; margin-left: 15px;">
+          </div>
+        <div class="col-md-2 col-6">
+            <h4 style="font-size: 20px; margin-top: 15px; margin-left: 25px;">Phương thức thanh toán</h4>
+            <img src="image/tttt.png" alt="" style="width: 122px; height: 132px; margin-left: 24px;">
+            <h4 style="font-size: 20px; margin-top: 15px; margin-left: 25px;">Dịch vụ giao hàng</h4>
+
+        </div>
+        <div class="col-md-4 col-12">
+            <h4 style="font-size: 20px; margin-top: 15px; ">Kết nối với chúng tôi</h4>
+            
+            <img src="image/ketnoi.png" alt="" style="width: 252px; height: 232px;">
+            
+        </div>
+    </div>
+
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+  </body>
+
+</html>
+<style>
+  html{
+    font-family: Inter,Helvetica,Arial,sans-serif;
+    
+  }
+  .spbc{
+    padding: 0px 16px;
+    height: 32px;
+    cursor: pointer;
+    align-items: center;
+    border: 1px solid rgb(221, 221, 227);
+    font-size: 14px;
+    display: flex;
+    margin-right: 10px;
+    font-weight: 400;
+  }
+ .ta {
+  display: flex;
+  justify-content: space-between;
+}
+  .mt{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  .gcm{
+    padding-top: 6px;
+    gap: 6px;
+    margin-bottom: -10px;
+    display: flex; 
+    font-size: 12px; 
+    color: rgb(128, 128, 137); 
+    border-top: 1px solid rgb(235, 235, 240);
+  }
+  main{
+    background-color: rgb(242, 243, 243);
+  }
+  .a{
+    width: 72px;
+    aspect-ratio: auto 72 / 72;
+    height: 72px;
+    margin: 0 20px 16px 15px;
+  }
+  .ab{
+    width: 690px;
+    margin-right: auto;
+  }
+  .aa{
+    width: 24px;
+    height: 24px;
+  }
+  
+  h6{
+    margin:0 3px 0 3px;
+    
+  }
+  .thea{
+    color: rgb(128, 128, 137);
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .dinhduong{
+    margin-left: -30px; 
+    color: rgb(128, 128, 137);
+    text-decoration: none; 
+    font-size: 14px; 
+    display: flex; 
+    line-height: 26px;
+  }
+
+</style>

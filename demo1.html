@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body ng-app="myApp" ng-controller="MyController">
+  <header>
+    <!-- place navbar here -->
+  </header>
+  <main>
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Danh mục</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Bán chạy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Hàng mới</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Giá thấp đến cao</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Giá cao đến thấp</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <div ng-repeat="cardGroup in DSSP">
+        <div class="row mx-1 my-2">
+            <div class="col" ng-repeat="colCard in cardGroup.cols">
+                <div class="card border">
+                    <img src="{{ colCard.anhSrc }}" class="card-img-top" alt="...">
+                    <img src="{{ colCard.chinhhang }}" alt="" style="width: 89px; height: 20px; margin:5px 0 -10px 10px; ">
+                    <div class="card-body">
+                        <p style="margin-bottom: 0" class="mt card-text">{{colCard.ten}}</p>
+                        <div class="rating" style="color: gold; font-size: 12px;">
+                            <i ng-repeat="star in colCard.stars" class="fas fa-star"></i>
+                        </div>
+                        <h6>{{ colCard.gia }}<sup>đ <span style="font-size: 8px;" class="badge rounded-pill text-bg-secondary">{{ colCard.giamgia }}</span></sup></h6>
+                        <div class="gcm">
+                            <img src="{{ colCard.nowIcon }}" alt="" style="width:32px ; height:16px; ">
+                            <h7>{{ colCard.giaohang }}</h7>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+  
+    
+  </main>
+  <footer>
+  
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+      <script src="angular.min.js"></script>
+      <script src="angular-route.min.js"></script>
+</body>
+
+</html>
+<script>
+    var myApp = angular.module('myApp', []);
+    myApp.controller('MyController', function($scope) {
+        $scope.DSSP = [];
+
+        var cardData1 = [
+            {
+                anhSrc: "image/danhmuc9.webp",
+                chinhhang: "image/chinhhanh.png",
+                ten: "Tã/bỉm quần HUGGIES SKINCARE gói SUPER JUMBO size XL 60+8 miếng",
+                gia: "1.180.000",
+                giamgia: "-35%",
+                nowIcon: "image/now.png",
+                giaohang: "giao siêu tốc",
+                stars: [1, 2, 3, 4, 5]
+            },  {
+                anhSrc: "image/danhmuc9.webp",
+                chinhhang: "image/chinhhanh.png",
+                ten: "Tã/bỉm quần HUGGIES SKINCARE gói SUPER JUMBO size XL 60+8 miếng",
+                gia: "1.180.000",
+                giamgia: "-35%",
+                nowIcon: "image/now.png",
+                giaohang: "giao siêu tốc",
+                stars: [1, 2, 3, 4, 5]
+            },  {
+                anhSrc: "image/danhmuc9.webp",
+                chinhhang: "image/chinhhanh.png",
+                ten: "Tã/bỉm quần HUGGIES SKINCARE gói SUPER JUMBO size XL 60+8 miếng",
+                gia: "1.180.000",
+                giamgia: "-35%",
+                nowIcon: "image/now.png",
+                giaohang: "giao siêu tốc",
+                stars: [1, 2, 3, 4, 5]
+            },  {
+                anhSrc: "image/danhmuc9.webp",
+                chinhhang: "image/chinhhanh.png",
+                ten: "Tã/bỉm quần HUGGIES SKINCARE gói SUPER JUMBO size XL 60+8 miếng",
+                gia: "1.180.000",
+                giamgia: "-35%",
+                nowIcon: "image/now.png",
+                giaohang: "giao siêu tốc",
+                stars: [1, 2, 3, 4, 5]
+            },  {
+                anhSrc: "image/danhmuc9.webp",
+                chinhhang: "image/chinhhanh.png",
+                ten: "Tã/bỉm quần HUGGIES SKINCARE gói SUPER JUMBO size XL 60+8 miếng",
+                gia: "1.180.000",
+                giamgia: "-35%",
+                nowIcon: "image/now.png",
+                giaohang: "giao siêu tốc",
+                stars: [1, 2, 3, 4, 5]
+            },
+            // Thêm các đối tượng card khác vào đây
+        ];
+
+        var cardData2 = [
+        {
+                anhSrc: "image/danhmuc7.webp",
+                chinhhang: "image/chinhhanh.png",
+                ten: "Tã/bỉm quần HUGGIES SKINCARE gói SUPER JUMBO size XL 60+8 miếng",
+                gia: "1.180.000",
+                giamgia: "-35%",
+                nowIcon: "image/now.png",
+                giaohang: "giao siêu tốc",
+                stars: [1, 2, 3, 4, 5]
+            },  {
+                anhSrc: "image/danhmuc.webp",
+                chinhhang: "image/chinhhanh.png",
+                ten: "Tã/bỉm quần HUGGIES SKINCARE gói SUPER JUMBO size XL 60+8 miếng",
+                gia: "1.180.000",
+                giamgia: "-35%",
+                nowIcon: "image/now.png",
+                giaohang: "giao siêu tốc",
+                stars: [1, 2, 3, 4, 5]
+            },  {
+                anhSrc: "image/danhmuc7.webp",
+                chinhhang: "image/chinhhanh.png",
+                ten: "Tã/bỉm quần HUGGIES SKINCARE gói SUPER JUMBO size XL 60+8 miếng",
+                gia: "1.180.000",
+                giamgia: "-35%",
+                nowIcon: "image/now.png",
+                giaohang: "giao siêu tốc",
+                stars: [1, 2, 3, 4, 5]
+            },  {
+                anhSrc: "image/danhmuc8.webp",
+                chinhhang: "image/chinhhanh.png",
+                ten: "Tã/bỉm quần HUGGIES SKINCARE gói SUPER JUMBO size XL 60+8 miếng",
+                gia: "1.180.000",
+                giamgia: "-35%",
+                nowIcon: "image/now.png",
+                giaohang: "giao siêu tốc",
+                stars: [1, 2, 3, 4, 5]
+            },  {
+                anhSrc: "image/danhmuc.webp",
+                chinhhang: "image/chinhhanh.png",
+                ten: "Tã/bỉm quần HUGGIES SKINCARE gói SUPER JUMBO size XL 60+8 miếng",
+                gia: "1.180.000",
+                giamgia: "-35%",
+                nowIcon: "image/now.png",
+                giaohang: "giao siêu tốc",
+                stars: [1, 2, 3, 4, 5]
+            },
+        ];
+
+        // Tạo mảng cols chứa các đối tượng card cho từng hàng
+        $scope.DSSP.push({
+            cols: cardData1
+        });
+
+        $scope.DSSP.push({
+            cols: cardData2
+        });
+    });
+</script>
